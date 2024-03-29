@@ -1,0 +1,64 @@
+.movie-details-container {
+    display: flex;
+    flex-direction: column;
+    // align-items: center; /* จัดเรียงให้อยู่ตรงกลางตามแนวนอน */
+    padding: 0 250px; /* เพิ่มระยะห่างด้านข้าง */
+    margin-top: 64px;
+  }
+  
+  .details-content {
+    display: flex;
+    // justify-content: center; /* จัดเรียงให้อยู่ตรงกลางตามแนวนอน */
+    align-items: flex-start; /* จัดเรียงให้อยู่ด้านบนตามแนวตั้ง */
+  }
+  
+  .movie-poster img {
+    width: 400px; /* กำหนดความกว้างของภาพ */
+    height: auto; /* อนุญาตให้ความสูงปรับขนาดอัตโนมัติ */
+    margin-right: 40px; /* เพิ่มระยะห่างด้านขวาของภาพ */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+  
+  .movie-info {
+    max-width: 600px; /* กำหนดความกว้างสูงสุดของส่วนข้อมูล */
+    margin-top: 30px;
+  }
+  
+  .back-button {
+    margin-top: 20px; /* เพิ่มระยะห่างด้านบนของปุ่มกลับ */
+    
+  }
+
+  .custom-text{
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .d-flex{
+    // padding: 0 250px;
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.example-card{
+    display: flex; 
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+.mat-toolbar {
+  background-color: white;
+  color: black;
+  font-size: 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* ปรับ z-index ตามความเหมาะสม */
+}
+
+  

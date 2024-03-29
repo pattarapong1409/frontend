@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* สีพื้นหลัง */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff; /* สีพื้นหลังกล่อง */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    background-color: #000000; /* สีปุ่ม */
+    color: #fff; /* สีตัวอักษรบนปุ่ม */
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #585858; /* สีปุ่มเมื่อโฮเวอร์ */
+}
+
+.register-link {
+    margin-top: 20px;
+    display: block;
+    color: #000000; /* สีลิงก์ */
+    text-decoration: none;
+}
+
+.title{
+    font-size: 50px;
+}

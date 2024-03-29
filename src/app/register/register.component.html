@@ -1,0 +1,52 @@
+<body style="background-color: antiquewhite; display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <form [formGroup]="signupForm" (ngSubmit)="signup()" novalidate style="width: 300px; padding: 20px; background-color: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+    <div *ngIf="selectedImage" style="display: flex; justify-content: center; align-items: center;">
+      <img [src]="selectedImage" class="card img" alt="Selected Image"
+          style="border-radius: 50%; width: 150px; height: 150px;">
+  </div>
+  <h3 style="text-align: center;">Signup</h3>
+  <span>Choose Avatar image</span>
+  <input type="file" (change)="onFileSelected($event)" accept="image/*" 
+  placeholder="Choose Image" formControlName="avatar_img" style="margin-bottom: 20px;">
+    <mat-form-field style="width: 100%;">
+      <mat-label>First name</mat-label>
+      <input matInput placeholder="Ex. POND" formControlName="name" />
+    </mat-form-field>
+    <mat-form-field style="width: 100%;">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Ex. Jon@email.com" formControlName="email" />
+    </mat-form-field>
+    <mat-form-field style="width: 100%;">
+      <mat-label>Password</mat-label>
+      <input
+        matInput
+        type="password"
+        placeholder="Ex. XXXX XXX"
+        formControlName="password"
+      />
+    </mat-form-field>
+
+    <!-- <h3>Choose Avatar image
+      <input type="file" (change)="onFileSelected($event)" accept="image/*" placeholder="Choose Image" formControlName="avatar_img"  style="margin-bottom: 20px;">
+      </h3> -->
+
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+
+      <button routerLink="/login" mat-raised-button color="accent" style="width: 45%;">
+        <span>Back</span>
+      </button>
+      
+      <button
+        color="accent"
+        [disabled]="!signupForm.valid"
+        mat-raised-button
+        type="submit" 
+        style="width: 45%;"
+      >
+        <span>Sign up</span>
+      </button>
+
+      
+    </div>
+  </form>
+</body>

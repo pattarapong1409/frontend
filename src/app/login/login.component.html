@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ</title>
+</head>
+<body  style="background-color: antiquewhite;">
+    <div class="login-container">
+        <h2 class="title">LOGIN</h2>
+        <form [formGroup]="loginForm" (ngSubmit)="login()" novalidate>
+            <input type="text"  placeholder="User Name" formControlName="email">
+            <input type="password" name="password" placeholder="Password" formControlName="password" >
+            <button color="accent" [disabled]="!loginForm.valid" mat-raised-button type="submit"><span>Login</span></button>
+        </form>
+        <a href="/signup" class="register-link">Signup</a>
+    </div>
+</body>
+</html>
+
+<!-- <form [formGroup]="loginForm" (ngSubmit)="login()" novalidate>
+    <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Ex. John" formControlName="email">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="Ex. John" formControlName="password" />
+    </mat-form-field>
+    <button color="accent" [disabled]="!loginForm.valid" mat-raised-button type="submit"><span>Login</span></button>
+</form> -->
+

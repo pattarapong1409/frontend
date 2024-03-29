@@ -1,0 +1,84 @@
+.d-flex{
+    padding: 0 250px;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.example-card{
+    display: flex; 
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+.mat-toolbar {
+  background-color: white;
+  color: black;
+  font-size: 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* ปรับ z-index ตามความเหมาะสม */
+}
+
+body {
+  padding-top: 64px; /* ค่าสูงสุดของ mat-toolbar */
+}
+
+  .col-md-5{
+    width: 35em;
+
+  }
+
+  .img_box {
+    transition: transform 0.3s ease;
+    width: 80%;
+    height: 80%;
+    object-fit: cover; /* ให้ภาพเต็มพื้นที่ของ container */
+}
+
+.img_box:hover {
+    transform: scale(1.1); /* เพิ่มขนาดของรูปภาพเมื่อ hover */
+}
+
+.text-name{
+  border: 2px solid Violet;
+  width: 400px; /* กำหนดความยาวของ h1 */
+  display: inline-block; /* ทำให้ h1 อยู่ในบรรทัดเดียวกัน */
+}
+
+.row {
+  display: flex;
+  justify-content: center; /* จัดให้อยู่ตรงกลางตามแนวนอน */
+  align-items: center; /* จัดให้อยู่ตรงกลางตามแนวดิ่ง */
+  text-align: center; /* จัดให้อยู่ตรงกลางเวลามีเนื้อหาอยู่ภายใน */
+  margin-top: 64px;
+}
+
+.img-vote{
+  display: flex;
+  justify-content: center; /* จัดให้อยู่ตรงกลางตามแนวนอน */
+  align-items: center; /* จัดให้อยู่ตรงกลางตามแนวดิ่ง */
+  text-align: center; /* จัดให้อยู่ตรงกลางเวลามีเนื้อหาอยู่ภายใน */
+  margin-top: 50px;
+}
+
+.detail{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.example-card{
+  display: flex;
+}
+
+
+
+
+
+

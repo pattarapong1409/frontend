@@ -1,0 +1,44 @@
+.register-card {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.register-header {
+    background-color: #4CAF50; /* สีพื้นหลังส่วนหัว */
+    color: rgb(255, 255, 255); /* สีของตัวอักษรในส่วนหัว */
+}
+
+.register-content {
+    padding: 20px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.mat-form-field {
+    margin-bottom: 20px;
+}
+
+button {
+    align-self: flex-end;
+}
+
+.register-button-back {
+    margin-top: 20px;
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .mat-label{
+    color: black;
+  }
+  
+  

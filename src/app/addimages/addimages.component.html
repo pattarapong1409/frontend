@@ -1,0 +1,50 @@
+<html style="background-color: antiquewhite;">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <p>
+        <mat-toolbar color="primary">
+          <a routerLink="/home" style="text-decoration: none; color: black;">Lovely Pet</a>
+          <span class="example-spacer"></span>
+          <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+            <mat-icon>favorite</mat-icon>
+          </button>
+          <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon>share</mat-icon>
+          </button>
+          <form class="form-inline my-2 my-lg-0" style="margin-left: 1300px;">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+          <div style="margin-left: 20px;">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </div>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" [matMenuTriggerFor]="menu" style="margin-left: 20px;">
+            <mat-icon>menu</mat-icon>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item routerLink="/home">Home</button>
+                <button mat-menu-item routerLink="/profile">Profile</button>
+                <button mat-menu-item routerLink="/graph">Graph</button>
+                <button mat-menu-item routerLink="/rank">Ranking</button>
+                <button mat-menu-item routerLink="/logout">Log out</button>
+              </mat-menu>
+          </button>
+        </mat-toolbar>
+      </p>
+
+      <div style="display: flex; align-items: center; margin-top: 50px; justify-content: center; margin-bottom: 20px;">
+        <div class="card p-3" style="height: 400px; width: 500px; background: #bdbdbda7;">
+            <a routerLink="/profile">
+                <mat-icon aria-hidden="false" fontIcon="arrow_back"></mat-icon>
+            </a>
+            <form (ngSubmit)="getAdd()">
+                <div *ngIf="selectedImage" style="display: flex; justify-content: center; align-items: center;">
+                    <img [src]="selectedImage" class="card img" alt="Selected Image"
+                        style="border-radius: 50%; width: 150px; height: 150px;">
+                </div>
+                <div class="row" style="display: flex; justify-content: center;">
+                    <input type="file" (change)="onFileSelected($event)" style="border: black;">
+                    <button mat-raised-button type="submit" style="width: 40%; margin-top: 30px;">Submit</button>
+                </div>
+                
+            </form> 
+        </div>
+    </div>
+</html>

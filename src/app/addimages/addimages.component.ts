@@ -112,8 +112,8 @@ export class AddimagesComponent {
   getAdd(): void {
     if (this.downloadURL) {
       const image_url = this.downloadURL;
-      const fashmash_id = this.aid = localStorage.getItem('aid');
-      this.imageService.getAdd(image_url, fashmash_id).subscribe(
+      const aid = this.aid = localStorage.getItem('aid');
+      this.imageService.getAdd(image_url, aid).subscribe(
         () => {
           console.log('Image added successfully');
           this.router.navigate(['/profile']);
